@@ -12,9 +12,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String name;
     private String login;
     private String hash_password;
+    private String name;
 
     public Long getId() {
         return id;

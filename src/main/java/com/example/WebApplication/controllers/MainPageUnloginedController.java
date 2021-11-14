@@ -11,7 +11,7 @@ public class MainPageUnloginedController {
 
     @GetMapping
     public String mainPage(Model model){
-        model.addAttribute("message", "Main page!");
+
         return "main_unlog";
     }
 }

@@ -6,11 +6,26 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body style="background: #4d075b">
-<div style="background: #872be0">
-    <a href="/adfeed", style="color: aquamarine">Ad feed</a>
-    <a href="/add ad", style="color: aquamarine">Add ad</a>
-    <a href="/your adds", style="color: aquamarine">My adds</a>
-    <a href="", style="color: aquamarine">Logout</a>
-</div>
+    <div class="container-fluid" style="background: #a667ea">
+        <a href="/ad_feed" style="left: 75%">Ad feed</a>
+        <a href="/add_ad" style="left: 85%">Add ad</a>
+        <a href="/your_adds" style="left: 90%">My adds</a>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+        <a href="", style="color: aquamarine">Logout</a>
+        <style>
+            a {
+                color: aqua;
+                font-size: 25px;
+                text-decoration: none;
+                position: absolute;
+                top: 2%;
+            }
+            a:hover{color: aquamarine}
+            div {border: 25px solid #a667ea}
+        </style>
+    </div>
+
 </body>
 </html>
