@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.Map;
-
 @Controller
 @RequestMapping("/register")
 public class RegisterPageController {
@@ -25,7 +23,7 @@ public class RegisterPageController {
 
     @PostMapping
     public String newUser(User user, Model model){
-        User us = userRepository.findByLogin(user.getLogin());
+        User us = userRepository.findByUsername(user.getUsername());
         if(us != null){
             model.addAttribute("exists", "User exists!");
             return "register";

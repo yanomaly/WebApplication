@@ -1,10 +1,6 @@
 package com.example.WebApplication.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.util.Vector;
+import javax.persistence.*;
 
 @Entity
 public class User {
@@ -12,9 +8,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String login;
-    private String hash_password;
-    private String name;
+    private String username;
+    private String password;
 
     public Long getId() {
         return id;
@@ -24,27 +19,19 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String name) {
+        this.username = name;
     }
 
-    public String getLogin() {
-        return login;
+    public String getPassword() {
+        return password;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getHash_password() {
-        return hash_password;
-    }
-
-    public void setHash_password(String hash_password) {
-        this.hash_password = hash_password;
+    public void setPassword(String hash_password) {
+        this.password = hash_password;
     }
 }
