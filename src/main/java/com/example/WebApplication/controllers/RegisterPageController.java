@@ -1,11 +1,12 @@
 package com.example.WebApplication.controllers;
 
 import com.example.WebApplication.entities.User;
-import com.example.WebApplication.repositories.UserRepository;
+import com.example.WebApplication.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -14,24 +15,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class RegisterPageController {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserService userService;
 
     @GetMapping
     public String mainPage(Model model){
+        model.addAttribute("userForm", new User());
         return "register";
     }
 
     @PostMapping
-    public String newUser(User user, Model model){
-        User us = userRepository.findByUsername(user.getUsername());
-        if(us != null){
-            model.addAttribute("exists", "User exists!");
+    public String newUser(@ModelAttribute ("userForm") User userForm, Model model){
+        if (!userService.saveUser(userForm)){
+            model.addAttribute("usernameError", "Пользователь с таким именем уже существует");
             return "register";
         }
-        else {
-            model.addAttribute("exists", "");
-            userRepository.save(user);
-            return "redirect:/main";
-        }
+        return "redirect:/main";
     }
 }

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sign up</title>
+  <meta charset="UTF-8">
+  <title>Sign up</title>
 </head>
 <body style="background: #4d075b">
-<p th:text = "${exists}"/>
+
 <form th:action="@{/registration}" method="post">
     <div><label> Name: <input type="text" name="name"/> </label></div>
     <div><label> Password: <input type="password" name="password"/> </label></div>
     <div><input type="submit" value="Sign Up"/></div>
 </form>
+
 </body>
 </html>
