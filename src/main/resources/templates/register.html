@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en", xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <title>Sign up</title>
+    <link rel = stylesheet href = "/static/css/register.css" th:href="@{/css/register.css}" />
 </head>
-<body style="background: #4d075b">
-<div class="container-fluid" style="background: #a667ea">
+<body>
+<div class="container-fluid">
 <a href="/" style="left: 90%">To main page</a>
 <a href="/login" style="left: 83%">Login</a>
 </div>
@@ -16,50 +17,6 @@
     <divP><input type="password" name="password" style="width: 200px; height: 25px; background: #a667ea"/></divP>
     <divS><input type="submit" value="Sign Up" style="border-color: #a667ea; background: transparent; color: wheat; font-size: 25px; cursor: pointer;"/></divS>
 </form>
-<style>
-
-    divNt{
-        position: absolute;
-        top: 40%;
-        left: 45%;
-        font-size: 25px;
-        color: wheat ;
-    }
-    divN{
-        position: absolute;
-        top: 44%;
-        left: 44%;
-    }
-    divPt{
-        position: absolute;
-        top: 48%;
-        left: 45%;
-        font-size: 25px;
-        color: wheat ;
-    }
-    divP{
-        position: absolute;
-        top: 52%;
-        left: 44%;
-    }
-    divS{
-        position: absolute;
-        top: 56%;
-        left: 47%;
-    }
-
-    a{
-        color: aqua;
-        left: 90%;
-        font-size: 25px;
-        text-decoration: none;
-        top: 2%;
-        font-family: Times New Roman;
-        position: absolute;
-    }
-    a:hover{color: aquamarine}
-    div {border: 25px solid #a667ea}
-</style>
 <p></p>
 </body>
 </html>

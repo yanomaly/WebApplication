@@ -1,0 +1,43 @@
+input{
+    color: aqua;
+    border: 0;
+    background: transparent;
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    top: 2%;
+    font-family: Times New Roman;
+}
+
+input:hover{
+    color: aquamarine;
+}
+
+a {
+    color: aqua;
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    top: 2%;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+p {
+    position: absolute;
+    left: 42%;
+    font-size: 50px;
+    color: wheat ;
+    font-family: Dubai
+}
+
+div {
+    border: 25px solid #a667ea;
+    background: #a667ea;
+}
+
+body{
+    background: #4d075b;
+}

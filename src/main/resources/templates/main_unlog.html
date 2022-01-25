@@ -1,36 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en", xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel = stylesheet href = "/static/css/main_unlog.css" th:href="@{/css/main_unlog.css}" />
 </head>
-<body style="background: #4d075b">
-<div class="container-fluid" style="background: #a667ea">
+<body>
+<div class="container-fluid">
     <a href="/ad_feed_unlog" style="left: 75%">Ad feed</a>
     <a href="/login" style="left: 85%">Login</a>
     <a href="/register" style="left: 90%">Sign up</a>
-    <Style>
-        a {
-            color: aqua;
-            font-size: 25px;
-            text-decoration: none;
-            position: absolute;
-            top: 2%;
-        }
-
-        a:hover{color: aquamarine}
-
-        div {border: 25px solid #a667ea}
-
-        p {
-            position: absolute;
-            left: 42%;
-            font-size: 50px;
-            color: wheat ;
-            font-family: Dubai
-        }
-    </Style>
 </div>
 <p>Latest ads:</p>
 </body>

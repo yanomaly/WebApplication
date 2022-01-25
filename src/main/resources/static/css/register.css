@@ -1,0 +1,56 @@
+divNt{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 25px;
+    color: wheat ;
+}
+
+divN{
+    position: absolute;
+    top: 44%;
+    left: 44%;
+}
+
+divPt{
+    position: absolute;
+    top: 48%;
+    left: 45%;
+    font-size: 25px;
+    color: wheat ;
+}
+
+divP{
+    position: absolute;
+    top: 52%;
+    left: 44%;
+}
+
+divS{
+    position: absolute;
+    top: 56%;
+    left: 47%;
+}
+
+a{
+    color: aqua;
+    left: 90%;
+    font-size: 25px;
+    text-decoration: none;
+    top: 2%;
+    font-family: Times New Roman;
+    position: absolute;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+div {
+    border: 25px solid #a667ea;
+    background: #a667ea;
+}
+
+body{
+    background: #4d075b;
+}
