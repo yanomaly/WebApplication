@@ -29,6 +29,6 @@ public class RegisterPageController {
             model.addAttribute("usernameError", "Пользователь с таким именем уже существует");
             return "register";
         }
-        return "redirect:/main";
+        return "/main";
     }
 }

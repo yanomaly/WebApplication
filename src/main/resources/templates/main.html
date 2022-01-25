@@ -11,10 +11,20 @@
         <a href="/add_ad" style="left: 85%">Add ad</a>
         <a href="/your_adds" style="left: 90%">My adds</a>
         <form th:action="@{/logout}" method="post">
-            <input type="submit" value="Sign Out"/>
+            <input type="submit" value="Logout"/>
         </form>
-        <a href="", style="color: aquamarine">Logout</a>
         <style>
+            input{
+                color: aqua;
+                border: 0;
+                background: transparent;
+                font-size: 25px;
+                text-decoration: none;
+                position: absolute;
+                top: 2%;
+                font-family: Times New Roman;
+            }
+
             a {
                 color: aqua;
                 font-size: 25px;
@@ -22,10 +32,19 @@
                 position: absolute;
                 top: 2%;
             }
+
+            p {
+                position: absolute;
+                left: 42%;
+                font-size: 50px;
+                color: wheat ;
+                font-family: Dubai
+            }
             a:hover{color: aquamarine}
+            input:hover{color: aquamarine}
             div {border: 25px solid #a667ea}
         </style>
     </div>
-
+    <p>Latest ads:</p>
 </body>
 </html>

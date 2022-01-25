@@ -1,14 +1,16 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Main page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-<body style="background: #872be0">
+<body style="background: #4d075b">
 <div class="container-fluid" style="background: #a667ea">
-    <a href="/ad_feed" style="left: 75%">Ad feed</a>
+    <a href="/ad_feed_unlog" style="left: 75%">Ad feed</a>
     <a href="/login" style="left: 85%">Login</a>
     <a href="/register" style="left: 90%">Sign up</a>
-    <style>
+    <Style>
         a {
             color: aqua;
             font-size: 25px;
@@ -16,10 +18,20 @@
             position: absolute;
             top: 2%;
         }
+
         a:hover{color: aquamarine}
+
         div {border: 25px solid #a667ea}
-    </style>
+
+        p {
+            position: absolute;
+            left: 42%;
+            font-size: 50px;
+            color: wheat ;
+            font-family: Dubai
+        }
+    </Style>
 </div>
-<p style="position: absolute; left: 42%; font-size: 50px; color: wheat ; font-family: Dubai">Latest ads:</p>
+<p>Latest ads:</p>
 </body>
 </html>
