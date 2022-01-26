@@ -26,9 +26,9 @@ public class RegisterPageController {
     @PostMapping
     public String newUser(@ModelAttribute ("userForm") User userForm, Model model){
         if (!userService.saveUser(userForm)){
-            model.addAttribute("usernameError", "Пользователь с таким именем уже существует");
+            model.addAttribute("usernameError", "User with this name already exists!");
             return "register";
         }
-        return "/main";
+        return "register";
     }
 }

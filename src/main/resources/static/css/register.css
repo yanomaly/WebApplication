@@ -1,3 +1,10 @@
+p{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    font-size: 25px;
+}
+
 divNt{
     position: absolute;
     top: 40%;

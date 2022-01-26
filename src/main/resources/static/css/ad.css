@@ -19,7 +19,6 @@ input{
     font-size: 25px;
     text-decoration: none;
     position: absolute;
-    top: 2%;
     font-family: Times New Roman;
 }
 
@@ -34,4 +33,17 @@ div {
 
 body{
     background: #4d075b;
+}
+
+photo{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+p1{
+    color: wheat;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: Times New Roman;
 }
