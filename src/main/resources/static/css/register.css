@@ -5,7 +5,7 @@ p{
     font-size: 25px;
 }
 
-divNt{
+.Nt{
     position: absolute;
     top: 40%;
     left: 45%;
@@ -13,13 +13,13 @@ divNt{
     color: wheat ;
 }
 
-divN{
+.N{
     position: absolute;
     top: 44%;
     left: 44%;
 }
 
-divPt{
+.Pt{
     position: absolute;
     top: 48%;
     left: 45%;
@@ -27,13 +27,13 @@ divPt{
     color: wheat ;
 }
 
-divP{
+.P{
     position: absolute;
     top: 52%;
     left: 44%;
 }
 
-divS{
+.S{
     position: absolute;
     top: 56%;
     left: 47%;

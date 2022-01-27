@@ -12,10 +12,10 @@ public class Ad {
     private long id;
 
     private File photo;
+    private String path;
     private Integer price;
     private String phone;
     private String description;
-    private String path;
 
     public long getId() {
         return id;

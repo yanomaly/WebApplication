@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="https://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <title>Sign up</title>
-    <link rel = stylesheet type="text/css" href = "/static/css/register.css" th:href="@{/static/css/register.css}" />
+    <link rel = stylesheet type="text/css" href = "/static/css/register.css" th:href="@{/css/register.css}" />
 </head>
 <body>
-<div class="container-fluid">
+<div>
 <a href="/" style="left: 90%">To main page</a>
 <a href="/login" style="left: 83%">Login</a>
+    <p th:text="${usernameError}"/>
+    <form th:action="@{/register}" th:object = "${userForm}" method="post">
+        <label class="Nt">Enter username:</label>
+        <input type="text" name="username" class="N" style="width: 200px; height: 25px; background: #a667ea"/>
+        <label class="Pt">Enter password:</label>
+        <input type="password" name="password" class="P" style="width: 200px; height: 25px; background: #a667ea"/>
+        <input type="submit" value="Sign Up" class="S   " style="border-color: #a667ea; background: transparent; color: wheat; font-size: 25px; cursor: pointer;"/>
+    </form>
 </div>
-<p th:text="${usernameError}"/>
-<form th:action="@{/register}" th:object = "${userForm}" method="post">
-    <divNt><label>Enter username:</label></divNt>
-    <divN><input type="text" name="username" style="width: 200px; height: 25px; background: #a667ea"/></divN>
-    <divPt><label>Enter password:</label></divPt>
-    <divP><input type="password" name="password" style="width: 200px; height: 25px; background: #a667ea"/></divP>
-    <divS><input type="submit" value="Sign Up" style="border-color: #a667ea; background: transparent; color: wheat; font-size: 25px; cursor: pointer;"/></divS>
-</form>
-<p></p>
 </body>
 </html>

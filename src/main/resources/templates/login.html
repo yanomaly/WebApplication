@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel = stylesheet type="text/css" href = "/static/css/login.css" th:href="@{/static/css/login.css}" />
+    <link rel = stylesheet type="text/css" href = "/static/css/login.css" th:href="@{/css/login.css}" />
 </head>
 <body>
-<div class="container-fluid">
+<div>
 <a href="/" style="left: 90%">To main page</a>
 <a href="/register" style="left: 83%">Sign up</a>
 </div>
 <divF>
 <form th:action="@{/login}" method="post">
-    <divNt><label>Enter username:</label></divNt>
-    <divN><input type="text" name="username" style="width: 200px; height: 25px; background: #a667ea"/></divN>
-    <divPt><label>Enter password:</label></divPt>
-    <divP><input type="password" name="password" style="width: 200px; height: 25px; background: #a667ea"/></divP>
-    <divS><input type="submit" value="Login" style="border-color: #a667ea; background: transparent; color: wheat; font-size: 25px; cursor: pointer"/></divS>
+    <label class="Nt">Enter username:</label>
+    <input type="text" class="N" name="username" style="width: 200px; height: 25px; background: #a667ea"/>
+    <label class="Pt">Enter password:</label>
+    <input type="password" class="P" name="password" style="width: 200px; height: 25px; background: #a667ea"/>
+    <input type="submit" class="S" value="Login" style="border-color: #a667ea; background: transparent; color: wheat; font-size: 25px; cursor: pointer"/>
 </form>
 </divF>
 </body>

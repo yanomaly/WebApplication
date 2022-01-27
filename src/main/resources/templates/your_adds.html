@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Your adds</title>
-    <link rel = stylesheet type="text/css" href = "/static/css/your_adds.css" th:href="@{/static/css/your_adds.css}" />
+    <link rel = stylesheet type="text/css" href = "/static/css/your_adds.css" th:href="@{/css/your_adds.css}" />
 </head>
 <body>
-<div class="container-fluid">
-<form th:action="@{/logout}" method="post">
+<div>
+<form th:action="@{/logout}" href="/" method="post">
     <input type="submit" value="Logout"/>
 </form>
     <a href="/main">To main page</a>

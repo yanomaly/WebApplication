@@ -41,3 +41,35 @@ div {
 body{
     background: #4d075b;
 }
+
+table{
+    position: absolute;
+    width: 25%;
+    height: 70%;
+    border-spacing: 10px;
+}
+
+th{
+    border: solid 2px #a667ea;
+    aign: center;
+}
+
+tr.photo{
+    border: solid 2px #a667ea;
+    height: 50%;
+}
+
+tr.descr{
+    border: solid 2px #a667ea;
+    height: 40%;
+}
+
+tr.price{
+    border: solid 2px #a667ea;
+    height: 5%;
+}
+
+tr.phone{
+    border: solid 2px #a667ea;
+    height: 5%;
+}

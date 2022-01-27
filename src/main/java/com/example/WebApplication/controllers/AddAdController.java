@@ -23,11 +23,11 @@ public class AddAdController {
     }
 
     @PostMapping
-    public String createAd(@ModelAttribute("adForm") Ad adForm, Model model){
-        if (!adService.saveAd(adForm)){
+    public String createAd(@ModelAttribute("adForm") Ad adForm, Model model) {
+           if (!adService.saveAd(adForm)){
             model.addAttribute("error", "Something bruuuuh with yours ad!");
             return "ad";
         }
-        return "ad";
+        return "redirect:/main";
     }
 }

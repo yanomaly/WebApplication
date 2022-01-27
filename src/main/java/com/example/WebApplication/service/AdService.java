@@ -1,6 +1,7 @@
 package com.example.WebApplication.service;
 
 import com.example.WebApplication.entities.Ad;
+import com.example.WebApplication.repositories.AdRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,9 +9,11 @@ import org.springframework.stereotype.Service;
 public class AdService  {
 
     @Autowired
-    AdService adService;
+    AdRepository adRepository;
 
     public boolean saveAd(Ad ad){
-      return false;
+        if(adRepository.save(ad).equals(ad))
+        return true;
+        else return false;
     }
 }
