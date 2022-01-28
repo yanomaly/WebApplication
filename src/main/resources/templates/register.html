@@ -6,10 +6,9 @@
     <link rel = stylesheet type="text/css" href = "/static/css/register.css" th:href="@{/css/register.css}" />
 </head>
 <body>
-<div>
+<div class="main">
 <a href="/" style="left: 90%">To main page</a>
 <a href="/login" style="left: 83%">Login</a>
-    <p th:text="${usernameError}"/>
     <form th:action="@{/register}" th:object = "${userForm}" method="post">
         <label class="Nt">Enter username:</label>
         <input type="text" name="username" class="N" style="width: 200px; height: 25px; background: #a667ea"/>
@@ -17,6 +16,10 @@
         <input type="password" name="password" class="P" style="width: 200px; height: 25px; background: #a667ea"/>
         <input type="submit" value="Sign Up" class="S   " style="border-color: #a667ea; background: transparent; color: wheat; font-size: 25px; cursor: pointer;"/>
     </form>
+</div>
+<div class="error">
+    <h1 th:text="${usernameError}"/>
+    <h1 th:text="${weakPassword}"/>
 </div>
 </body>
 </html>

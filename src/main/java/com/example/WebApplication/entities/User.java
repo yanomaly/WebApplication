@@ -5,7 +5,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.util.Collection;
-import java.util.Set;
 
 @Entity
 public class User implements UserDetails {
@@ -15,8 +14,6 @@ public class User implements UserDetails {
 
     private String username;
     private String password;
-    @OneToMany
-    private Set<Ad> adds;
 
     public Long getId() {
         return id;
@@ -67,11 +64,4 @@ public class User implements UserDetails {
         this.password = hash_password;
     }
 
-    public Set<Ad> getAdds() {
-        return adds;
-    }
-
-    public void setAdds(Set<Ad> adds) {
-        this.adds = adds;
-    }
 }

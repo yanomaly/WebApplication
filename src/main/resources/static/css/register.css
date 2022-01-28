@@ -53,11 +53,22 @@ a:hover{
     color: aquamarine;
 }
 
-div {
+div.main {
     border: 25px solid #a667ea;
     background: #a667ea;
 }
 
+div.error{
+    text-align: center;
+    posirion: absolute;
+    top: 80%;
+    color: goldenrod;
+}
+
 body{
     background: #4d075b;
+}
+
+h1{
+    size: 25px;
 }

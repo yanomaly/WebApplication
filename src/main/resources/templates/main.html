@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org">
+<html xmlns:th="https://www.thymeleaf.org", style = "height: 100%">
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
     <link rel = stylesheet type="text/css" href = "/static/css/main.css" th:href="@{/css/main.css}"/>
 </head>
 <body>
-    <div>
+<div class="top">
+    <div class="links">
         <a href="/ad_feed" style="left: 75%">Ad feed</a>
         <a href="/add_ad" style="left: 85%">Add ad</a>
         <a href="/your_adds" style="left: 90%">My adds</a>
@@ -14,24 +15,15 @@
             <input type="submit" value="Logout"/>
         </form>
     </div>
-    <p>Latest ads:</p>
-    <table style="left: 6%; top: 20%;">
-        <tr class = "photo"><th> Фото 1 </th></tr>
-        <tr class = "descr"><th> Описание 1 </th></tr>
-        <tr class = "price"><th> Цена 1 </th></tr>
-        <tr class = "phone"><th> Телефон 1 </th></tr>
-    </table>
-    <table style="left: 36%; top: 20%;">
-        <tr class = "photo"><th> Фото 2 </th></tr>
-        <tr class = "descr"><th> Описание 2 </th></tr>
-        <tr class = "price"><th> Цена 2 </th></tr>
-        <tr class = "phone"><th> Телефон 2 </th></tr>
-    </table>
-    <table style="left: 66%; top: 20%;">
-        <tr class = "photo"><th> Фото 3 </th></tr>
-        <tr class = "descr"><th> Описание 3 </th></tr>
-        <tr class = "price"><th> Цена 3 </th></tr>
-        <tr class = "phone"><th> Телефон 3 </th></tr>
-    </table>
+    <h1> Latest ads: </h1>
+</div>
+    <div class ="adds">
+        <table th:each="add : ${adds}">
+            <tr class = "photo" ><td>Фото</td></tr>
+            <tr class = "descr" style="align: left;" ><td th:text="${add.getDescription()}" style="align: left;"></td></tr>
+            <tr class = price></tr><td th:text="${add.getPrice()} + ' BYN'" style="color: wheat;"></td></tr>
+            <tr class = "phone"><td th:text="${add.getPhone()}"></td></tr>
+        </table>
+    </div>
 </body>
 </html>

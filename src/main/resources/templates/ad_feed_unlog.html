@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org">
+<html xmlns:th="https://www.thymeleaf.org" style="height: 100%">
 <head>
     <meta charset="UTF-8">
     <title>Ad feed</title>
     <link rel = stylesheet type="text/css" href = "/static/css/ad_feed_unlog.css" th:href="@{/css/ad_feed_unlog.css}" />
 </head>
 <body>
-<div>
+<div class = "links">
     <a href="/">To main page</a>
+</div>
+<div class ="adds">
+    <table th:each="add : ${adds}">
+        <tr class = "photo" ><td>Фото</td></tr>
+        <tr class = "descr" style="align: left;" ><td th:text="${add.getDescription()}" style="align: left;"></td></tr>
+        <tr class = price></tr><td th:text="${add.getPrice()} + ' BYN'" style="color: wheat;"></td></tr>
+        <tr class = "phone"><td th:text="${add.getPhone()}"></td></tr>
+    </table>
 </div>
 </body>
 </html>

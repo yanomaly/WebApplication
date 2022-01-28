@@ -11,7 +11,7 @@
 <form th:action="@{/logout}" href="/" method="post">
     <input type="submit" value="Logout" style ="top: 2%"/>
 </form>
-    <form th:object = "${adForm}" enctype="multipart/form-data"  method="post">
+    <form th:action="@{/add_ad}" th:object = "${adForm}" method="post">
         <p1 style="position: absolute; top: 15%; left: 40%;"> Chose photo of your thing: </p1>
         <input type="file" accept="image/png" name="photo" style ="top: 20%; left: 40%">
         <p1 style="position: absolute; top: 25%; left: 40%;"> Create description of it: </p1>
@@ -21,8 +21,8 @@
         <input type="text" name="price" style="position: absolute; top: 62%; left: 40%; background: #a667ea"/>
         <p1 style="position: absolute; top: 66%; left: 40%;"> Enter your phone: </p1>
         <input type="text" name="phone" style="position: absolute; top: 70%; left: 40%; background: #a667ea"/>
-        <input type="submit" value="Submit" style ="top: 80%; left: 45%">
-        <p th:text="${error}" style="position: absolute; left: 40%; top: 85%; color: wheat"/>
+        <input type="submit" value="Submit" style ="top: 75%; left: 45%">
+        <p th:text="${error}" style="position: absolute; left: 40%; top: 80%; color: wheat"/>
     </form>
 </div>
 </body>

@@ -10,33 +10,36 @@ a:hover{
     color: aquamarine;
 }
 
-p {
-    position: absolute;
-    left: 42%;
-    font-size: 50px;
+h1 {
+    text-align: center;
+    font-size: 25px;
     color: wheat ;
     font-family: Dubai
 }
 
-div {
+div.links {
     border: 25px solid #a667ea;
     background: #a667ea;
 }
 
+div.adds{
+    height: 100%;
+}
+
 body{
     background: #4d075b;
+    height: 100%;
 }
 
 table{
-    position: absolute;
-    width: 25%;
-    height: 70%;
-    border-spacing: 10px;
+    margin: 2%;
+    float: left;
+    width: 29%;
+    height: 80%;
 }
 
-th{
+td{
     border: solid 2px #a667ea;
-    aign: center;
 }
 
 tr.photo{
@@ -45,16 +48,22 @@ tr.photo{
 }
 
 tr.descr{
+    color: wheat;
     border: solid 2px #a667ea;
-    height: 40%;
+    height: 35%;
+    text-align: left;
+    vertical-align: top;
 }
 
 tr.price{
     border: solid 2px #a667ea;
-    height: 5%;
+    height: 8%;
+    text-align: center;
 }
 
 tr.phone{
     border: solid 2px #a667ea;
-    height: 5%;
+    height: 8%;
+    color: wheat;
+    text-align: center;
 }

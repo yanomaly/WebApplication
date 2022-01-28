@@ -11,11 +11,10 @@ public class Ad {
     @GeneratedValue()
     private long id;
 
-    private File photo;
-    private String path;
-    private Integer price;
-    private String phone;
-    private String description;
+    public File photo;
+    public String price;
+    public String phone;
+    public String description;
 
     public long getId() {
         return id;
@@ -25,19 +24,11 @@ public class Ad {
         this.id = id;
     }
 
-    public String getPath() {
-        return path;
-    }
-
-    public void setPath(String path) {
-        this.path = path;
-    }
-
-    public Integer getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 

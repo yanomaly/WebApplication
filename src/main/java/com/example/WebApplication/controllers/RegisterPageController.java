@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.regex.Pattern;
+
 @Controller
 @RequestMapping("/register")
 public class RegisterPageController {
@@ -25,6 +27,8 @@ public class RegisterPageController {
 
     @PostMapping
     public String newUser(@ModelAttribute ("userForm") User userForm, Model model){
+        if(!Pattern.compile(".{6,}").matcher(userForm.getPassword()).find())
+            model.addAttribute("weakPassword", "Weak password!\nIt's length should be at least 6 symbols.");
         if (!userService.saveUser(userForm)){
             model.addAttribute("usernameError", "User with this name already exists!");
             return "register";
