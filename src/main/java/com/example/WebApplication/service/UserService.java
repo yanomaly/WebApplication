@@ -24,12 +24,6 @@ public class UserService implements UserDetailsService {
         return user;
     }
 
-    public boolean findUserByUsername(String username){
-        User userFromDb = userRepository.findByUsername(username);
-        if(userFromDb == null) return false;
-        else return true;
-    }
-
     public boolean saveUser(User user) {
         User userFromDB = userRepository.findByUsername(user.getUsername());
         if (userFromDB != null) return false;
@@ -37,7 +31,5 @@ public class UserService implements UserDetailsService {
         userRepository.save(user);
         return true;
     }
-
-
 
 }

@@ -52,26 +52,27 @@ td{
     border: solid 2px #a667ea;
 }
 
-tr.photo{
+td.photo{
     border: solid 2px #a667ea;
     height: 50%;
 }
 
-tr.descr{
+td.descr{
     color: wheat;
     border: solid 2px #a667ea;
-    height: 40%;
+    height: 35%;
     text-align: left;
     vertical-align: top;
 }
 
-tr.price{
+td.price{
     border: solid 2px #a667ea;
     height: 8%;
     text-align: center;
+    color: wheat;
 }
 
-tr.phone{
+td.phone{
     border: solid 2px #a667ea;
     height: 8%;
     color: wheat;

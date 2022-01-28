@@ -19,10 +19,10 @@
 </div>
     <div class ="adds">
         <table th:each="add : ${adds}">
-            <tr class = "photo" ><td>Фото</td></tr>
-            <tr class = "descr" style="align: left;" ><td th:text="${add.getDescription()}" style="align: left;"></td></tr>
-            <tr class = price></tr><td th:text="${add.getPrice()} + ' BYN'" style="color: wheat;"></td></tr>
-            <tr class = "phone"><td th:text="${add.getPhone()}"></td></tr>
+            <tr><td class = "photo" ></td></tr>
+            <tr><td class = "descr" th:text="${add.getDescription()}"></td></tr>
+            <tr><td class = price th:text="${add.getPrice()} + ' BYN'"></td></tr>
+            <tr><td class = "phone" th:text="${add.getPhone()}"></td></tr>
         </table>
     </div>
 </body>
