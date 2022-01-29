@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Your adds</title>
     <link rel = stylesheet type="text/css" href = "/static/css/your_adds.css" th:href="@{/css/your_adds.css}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/ico/apple-touch-icon.ico" th:href="@{/ico/apple-touch-icon.ico}">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/ico/favicon-32x32.ico" th:href="@{/ico/favicon-32x32.ico}">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/ico/favicon-16x16.ico" th:href="@{/ico/favicon-16x16.ico}">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 <div class="links">
@@ -18,7 +22,11 @@
             <tr><td class = "descr" th:text="${add.getDescription()}"></td></tr>
             <tr><td class = price th:text="${add.getPrice()} + ' BYN'"></td></tr>
             <tr><td class = "phone" th:text="${add.getPhone()}"></td></tr>
-            <tr><td style="border: 0;"><form th:action="@{/your_adds}" method="delete"><input type="submit" value="Delete"/></form></td></tr>
+            <tr><td style="border: 0;">
+            <form th:action="@{/your_adds}" method="post">
+                <input type="number" name="id" th:value="${add.getId()}" style="display: none" >
+                <input type="submit" value="Delete"/>
+            </form></td></tr>
         </table>
     </div>
 </body>

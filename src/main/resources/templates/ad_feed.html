@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org", style = "height: 100%">
+<html xmlns:th="https://www.thymeleaf.org" style = "height: 100%">
 <head>
     <meta charset="UTF-8">
     <title>Ad feed</title>
-    <link rel = stylesheet type="text/css" href = "/static/css/ad_feed.css" th:href="@{/css/ad_feed.css}" />
+    <link rel = stylesheet type="text/css" href = "/static/css/ad_feed.css" th:href="@{/css/ad_feed.css}"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/ico/apple-touch-icon.ico" th:href="@{/ico/apple-touch-icon.ico}">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/ico/favicon-32x32.ico" th:href="@{/ico/favicon-32x32.ico}">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/ico/favicon-16x16.ico" th:href="@{/ico/favicon-16x16.ico}">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 <div class = "links">
@@ -11,6 +15,23 @@
     <input type="submit" value="Logout"/>
 </form>
     <a href="/main">To main page</a>
+    <button id="sort1" onclick="document.getElementById('variant').style.display='block'; document.getElementById('sort1').style.display='none'; document.getElementById('sort2').style.display='block';">∨ Sort by</button>
+    <button id="sort2" onclick=" document.getElementById('variant').style.display='none'; document.getElementById('sort2').style.display='none'; document.getElementById('sort1').style.display='block';" style="display:none;">∧ Sort by</button>
+</div>
+<div id="variant">
+    <form th:action="@{/ad_feed}" th:object = "${order}" method="post">
+    <input type="number" name="order" value="1" style="display: none" >
+    <input style="position: relative;" type="submit" value="By price (low to high)"/><br>
+    </form>
+    <form th:action="@{/ad_feed}" th:object = "${order}" method="post">
+    <input type="number" name="order" value="2" style="display: none" >
+    <input style="position: relative; top: 20%" type="submit" value="By price (high to low)"/><br>
+    </form>
+    <form th:action="@{/ad_feed}" th:object = "${order}" method="post">
+    <input type="number" name="order" value="3" style="display: none" >
+    <input style="position: relative; top: 40%" type="submit" value="Default"/><br>
+    </form>
+    </form>
 </div>
 <div class ="adds">
 <table th:each="add : ${adds}">

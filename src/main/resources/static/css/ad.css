@@ -26,6 +26,10 @@ input:hover{
     color: aquamarine;
 }
 
+input.inp{
+    background: #a667ea
+}
+
 div {
     border: 25px solid #a667ea;
     background: #a667ea;
@@ -46,4 +50,12 @@ p1{
     font-size: 25px;
     text-decoration: none;
     font-family: Times New Roman;
+}
+
+textarea{
+    background: #a667ea;
+}
+
+p{
+    color: wheat;
 }

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel = stylesheet type="text/css" href = "/static/css/login.css" th:href="@{/css/login.css}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/ico/apple-touch-icon.ico" th:href="@{/ico/apple-touch-icon.ico}">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/ico/favicon-32x32.ico" th:href="@{/ico/favicon-32x32.ico}">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/ico/favicon-16x16.ico" th:href="@{/ico/favicon-16x16.ico}">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 <div>
@@ -13,10 +17,10 @@
 <divF>
 <form th:action="@{/login}" method="post">
     <label class="Nt">Enter username:</label>
-    <input type="text" class="N" name="username" style="width: 200px; height: 25px; background: #a667ea"/>
+    <input type="text" class="N" name="username"/>
     <label class="Pt">Enter password:</label>
-    <input type="password" class="P" name="password" style="width: 200px; height: 25px; background: #a667ea"/>
-    <input type="submit" class="S" value="Login" style="border-color: #a667ea; background: transparent; color: wheat; font-size: 25px; cursor: pointer"/>
+    <input type="password" class="P" name="password"/>
+    <input type="submit" class="S" value="Login"/>
 </form>
 </divF>
 </body>

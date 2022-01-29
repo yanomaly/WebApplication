@@ -47,8 +47,23 @@ public class AdService  {
         return adds;
     }
 
-    public List<Ad> getAll(){
-        return adRepository.findAll();
+    public List<Ad> getAll(Integer order){
+        switch(order){
+            case(1):
+                return adRepository.findAll().stream().sorted((x,y) ->{
+                    Integer xi = Integer.parseInt(x.getPrice());
+                    Integer yi = Integer.parseInt(y.getPrice());
+                    return xi.compareTo(yi);
+                }).toList();
+            case(2):
+                return adRepository.findAll().stream().sorted((x,y) ->{
+                    Integer xi = Integer.parseInt(x.getPrice());
+                    Integer yi = Integer.parseInt(y.getPrice());
+                    return yi.compareTo(xi);
+                }).toList();
+            default:
+                return adRepository.findAll();
+        }
     }
 
     public List<Ad> getThreeLast() {
@@ -59,5 +74,10 @@ public class AdService  {
         return adRepository.findAll().subList(0, adRepository.findAll().size());
         else
             return adRepository.findAll().subList(adRepository.findAll().size() - 3, adRepository.findAll().size());
+    }
+
+    public void deleteAdd(Ad ad){
+        userAddsRepository.delete(userAddsRepository.getByAdID(ad.getId()));
+        adRepository.deleteById(ad.getId());
     }
 }

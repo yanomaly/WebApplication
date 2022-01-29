@@ -10,6 +10,9 @@
     position: absolute;
     top: 44%;
     left: 44%;
+    width: 200px;
+    height: 25px;
+    background: #a667ea;
 }
 
 .Pt{
@@ -24,12 +27,20 @@
     position: absolute;
     top: 52%;
     left: 44%;
+    width: 200px;
+    height: 25px;
+    background: #a667ea;
 }
 
 .S{
     position: absolute;
     top: 56%;
     left: 47%;
+    border-color: #a667ea;
+    background: transparent;
+    color: wheat;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 a{

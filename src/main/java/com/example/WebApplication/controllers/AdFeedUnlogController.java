@@ -15,7 +15,7 @@ public class AdFeedUnlogController {
 
     @GetMapping
     public String mainPage(Model model){
-        model.addAttribute("adds", adService.getAll());
+        model.addAttribute("adds", adService.getAll(4));
         return "ad_feed_unlog";
     }
 }

@@ -17,6 +17,9 @@ p{
     position: absolute;
     top: 44%;
     left: 44%;
+    width: 200px;
+    height: 25px;
+    background: #a667ea;
 }
 
 .Pt{
@@ -24,19 +27,27 @@ p{
     top: 48%;
     left: 45%;
     font-size: 25px;
-    color: wheat ;
+    color: wheat;
 }
 
 .P{
     position: absolute;
     top: 52%;
     left: 44%;
+    width: 200px;
+    height: 25px;
+    background: #a667ea;
 }
 
 .S{
     position: absolute;
     top: 56%;
     left: 47%;
+    border-color: #a667ea;
+    background: transparent;
+    color: wheat;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 a{

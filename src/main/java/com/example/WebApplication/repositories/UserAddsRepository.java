@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface UserAddsRepository extends JpaRepository<UserAdds, Long> {
     List<UserAdds> findAllByUserID(Long userID);
+    void delete(UserAdds userAdds);
+    UserAdds getByAdID(Long adID);
 }
