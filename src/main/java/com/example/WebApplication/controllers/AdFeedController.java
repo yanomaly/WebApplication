@@ -1,5 +1,5 @@
 package com.example.WebApplication.controllers;
-import com.example.WebApplication.entities.Order;
+import com.example.WebApplication.entities.Ord;
 import com.example.WebApplication.service.AdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,13 +19,13 @@ public class AdFeedController {
     @GetMapping
     public String mainPage(Model model){
         model.addAttribute("adds", adService.getAll(3));
-        model.addAttribute("order", new Order());
+        model.addAttribute("order", new Ord());
         return "ad_feed";
     }
 
     @PostMapping
-    public String sorted(@ModelAttribute("order") Order order, Model model){
-        model.addAttribute("adds", adService.getAll(order.getOrder()));
+    public String sorted(@ModelAttribute("ord") Ord ord, Model model){
+        model.addAttribute("adds", adService.getAll(ord.getOrd()));
         return "ad_feed";
     }
 }

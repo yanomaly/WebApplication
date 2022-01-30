@@ -19,23 +19,23 @@
     <button id="sort2" onclick=" document.getElementById('variant').style.display='none'; document.getElementById('sort2').style.display='none'; document.getElementById('sort1').style.display='block';" style="display:none;">∧ Sort by</button>
 </div>
 <div id="variant">
-    <form th:action="@{/ad_feed}" th:object = "${order}" method="post">
-    <input type="number" name="order" value="1" style="display: none" >
+    <form th:action="@{/ad_feed}" th:object = "${ord}" method="post">
+    <input type="number" name="ord" value="1" style="display: none" >
     <input style="position: relative;" type="submit" value="By price (low to high)"/><br>
     </form>
-    <form th:action="@{/ad_feed}" th:object = "${order}" method="post">
-    <input type="number" name="order" value="2" style="display: none" >
+    <form th:action="@{/ad_feed}" th:object = "${ord}" method="post">
+    <input type="number" name="ord" value="2" style="display: none" >
     <input style="position: relative; top: 20%" type="submit" value="By price (high to low)"/><br>
     </form>
-    <form th:action="@{/ad_feed}" th:object = "${order}" method="post">
-    <input type="number" name="order" value="3" style="display: none" >
+    <form th:action="@{/ad_feed}" th:object = "${ord}" method="post">
+    <input type="number" name="ord" value="3" style="display: none" >
     <input style="position: relative; top: 40%" type="submit" value="Default"/><br>
     </form>
     </form>
 </div>
 <div class ="adds">
 <table th:each="add : ${adds}">
-    <tr><td class = "photo" ></td></tr>
+    <tr><td class = "photo"> <image th:src="@{/pic/noPhoto.jpg}" src = "/static/pic/noPhoto.jpg" style="height: 100%; width: 100%"></image> </td></tr>
     <tr><td class = "descr" th:text="${add.getDescription()}"></td></tr>
     <tr><td class = price th:text="${add.getPrice()} + ' BYN'"></td></tr>
     <tr><td class = "phone" th:text="${add.getPhone()}"></td></tr>

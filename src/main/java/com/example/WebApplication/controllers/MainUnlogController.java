@@ -18,8 +18,7 @@ public class MainUnlogController {
 
     @GetMapping
     public String mainPage(Model model){
-        List<Ad> a = adService.getThreeLast();
-        model.addAttribute("adds", a);
+        model.addAttribute("adds", adService.getThreeLast());
         return "main_unlog";
     }
 }

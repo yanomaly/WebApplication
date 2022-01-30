@@ -23,7 +23,7 @@
 </div>
     <div class ="adds">
         <table th:each="add : ${adds}">
-            <tr><td class = "photo" ></td></tr>
+            <tr><td class = "photo"> <image th:src="@{/pic/noPhoto.jpg}" src = "/static/pic/noPhoto.jpg" style="height: 100%; width: 100%"></image> </td></tr>
             <tr><td class = "descr" th:text="${add.getDescription()}"></td></tr>
             <tr><td class = price th:text="${add.getPrice()} + ' BYN'"></td></tr>
             <tr><td class = "phone" th:text="${add.getPhone()}"></td></tr>
