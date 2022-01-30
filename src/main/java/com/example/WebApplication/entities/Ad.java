@@ -78,7 +78,6 @@ public class Ad {
 //        FileOutputStream fileOutputStream = new FileOutputStream("src/main/resources/static/pic/photo.jpg");
 //        fileOutputStream.write(fileContent);
 //        fileOutputStream.close();
-        String path = photo.getAbsolutePath();
-        return path;
+        return photo.getAbsolutePath();
     }
 }
