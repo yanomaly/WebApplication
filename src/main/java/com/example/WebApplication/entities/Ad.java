@@ -72,7 +72,6 @@ public class Ad {
 //        File p = new File("src/main/resources/static/pic/noPhoto.jpg");
 //        byte fileContent[] = Files.readAllBytes(p.toPath());
 //        if(photo != null)
-//            fileContent = Files.readAllBytes(photo.toPath());
 //        if(photo == null)
 //            fileContent = Files.readAllBytes(photo.toPath());
 //        FileOutputStream fileOutputStream = new FileOutputStream("src/main/resources/static/pic/photo.jpg");
