@@ -33,6 +33,11 @@ public class RegisterPageController {
             model.addAttribute("usernameError", "User with this name already exists!");
             return "register";
         }
-        return "register";
+        if(userService.loadUserByUsername(userForm.getUsername()) == null) {
+            model.addAttribute("dontSave", "Some error with saving user. Please, try again.");
+            return "register";
+        }
+        else
+        return "redirect:/login";
     }
 }

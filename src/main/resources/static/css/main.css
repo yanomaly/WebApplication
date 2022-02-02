@@ -68,6 +68,8 @@ td.descr{
     height: 35%;
     text-align: left;
     vertical-align: top;
+    word-break: break-all;
+    font-size: 119%;
 }
 
 td.price{

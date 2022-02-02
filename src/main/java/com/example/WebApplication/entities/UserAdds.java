@@ -17,9 +17,7 @@ public class UserAdds {
         this.adID = adID;
     }
 
-    public UserAdds() {
-
-    }
+    public UserAdds() {}
 
     public Long getId() {
         return id;

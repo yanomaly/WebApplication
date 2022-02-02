@@ -54,6 +54,7 @@ p1{
 
 textarea{
     background: #a667ea;
+    resize: none;
 }
 
 p{

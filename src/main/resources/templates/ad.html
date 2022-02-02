@@ -15,11 +15,11 @@
 <form th:action="@{/logout}" href="/" method="post">
     <input type="submit" value="Logout" style ="top: 2%"/>
 </form>
-    <form th:action="@{/add_ad}" th:object = "${adForm}" method="post">
+    <form th:action="@{/add_ad}" th:object = "${adForm}" method="post" enctype="multipart/form-data" >
         <p1 style="position: absolute; top: 15%; left: 40%;"> Chose photo of your thing: </p1>
         <input type="file" accept="image/png" name="photo" style ="top: 20%; left: 40%">
         <p1 style="position: absolute; top: 25%; left: 40%;"> Create description of it: </p1>
-        <textarea name="description" cols="46" rows="15" style="position: absolute; top: 30%; left: 37%;"/></textarea>
+        <textarea name="description" cols="46" rows="15" style="position: absolute; top: 30%; left: 37%;" maxlength="800"/></textarea>
         <p1 style="position: absolute; top: 58%; left: 40%;"> Set price: </p1>
         <p1 style="position: absolute; top: 62%; left: 54%;"> BYN </p1>
         <input class="inp" type="text" name="price" style="position: absolute; top: 62%; left: 40%;"/>
