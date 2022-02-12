@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <title>Ad feed</title>
+    <link rel = stylesheet type="text/css"  th:href="@{/css/ad_feed_unlog.css}" />
+    <link rel="apple-touch-icon" sizes="180x180" th:href="@{/ico/apple-touch-icon.ico}">
+    <link rel="icon" type="image/png" sizes="32x32" th:href="@{/ico/favicon-32x32.ico}">
+    <link rel="icon" type="image/png" sizes="16x16" th:href="@{/ico/favicon-16x16.ico}">
+</head>
+<body>
+<div class = "links">
+    <a href="/">To main page</a>
+</div>
+<div class ="adds">
+    <table th:each="add : ${adds}">
+        <tr><td class = "photo">  <image th:src="@{${add.getPhoto_path()}}"  style="height: 100%; width: 100%"></image> </td></tr>
+        <tr><td class = "descr" th:text="${add.getDescription()}"></td></tr>
+        <tr><td class = price th:text="${add.getPrice()} + ' BYN'"></td></tr>
+        <tr><td class = "phone" th:text="${add.getPhone()}"></td></tr>
+    </table>
+</div>
+</body>
+</html>

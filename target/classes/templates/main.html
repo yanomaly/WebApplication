@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org", style = "height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link rel = stylesheet type="text/css"  th:href="@{/css/main.css}"/>
+    <link rel="apple-touch-icon" sizes="180x180"  th:href="@{/ico/apple-touch-icon.ico}">
+    <link rel="icon" type="image/png" sizes="32x32"  th:href="@{/ico/favicon-32x32.ico}">
+    <link rel="icon" type="image/png" sizes="16x16"  th:href="@{/ico/favicon-16x16.ico}">
+</head>
+<body>
+<div class="top">
+    <div class="links">
+        <a href="/ad_feed" style="left: 75%">Ad feed</a>
+        <a href="/add_ad" style="left: 85%">Add ad</a>
+        <a href="/your_adds" style="left: 90%">My adds</a>
+        <form th:action="@{/logout}" href="/" method="post">
+            <input type="submit" value="Logout"/>
+        </form>
+    </div>
+    <h1> Latest ads: </h1>
+</div>
+    <div class ="adds">
+        <table th:each="add : ${adds}">
+            <tr><td class = "photo">  <image th:src="@{${add.getPhoto_path()}}"  style="height: 100%; width: 100%"></image> </td></tr>
+            <tr><td class = "descr" th:text="${add.getDescription()}"></td></tr>
+            <tr><td class = price th:text="${add.getPrice()} + ' BYN'"></td></tr>
+            <tr><td class = "phone" th:text="${add.getPhone()}"></td></tr>
+        </table>
+    </div>
+</body>
+</html>

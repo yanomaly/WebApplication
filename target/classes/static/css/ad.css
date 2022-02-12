@@ -1,0 +1,62 @@
+a{
+    color: aqua;
+    left: 90%;
+    font-size: 25px;
+    text-decoration: none;
+    top: 2%;
+    font-family: Times New Roman;
+    position: absolute;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+input{
+    color: aqua;
+    border: 0;
+    background: transparent;
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    font-family: Times New Roman;
+}
+
+input:hover{
+    color: aquamarine;
+}
+
+input.inp{
+    background: #a667ea
+}
+
+div {
+    border: 25px solid #a667ea;
+    background: #a667ea;
+}
+
+body{
+    background: #4d075b;
+}
+
+photo{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+p1{
+    color: wheat;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: Times New Roman;
+}
+
+textarea{
+    background: #a667ea;
+    resize: none;
+}
+
+p{
+    color: wheat;
+}

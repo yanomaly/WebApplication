@@ -1,0 +1,86 @@
+input{
+    color: aqua;
+    border: 0;
+    background: transparent;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: Times New Roman;
+}
+
+input.logout{
+    position: absolute;
+    top: 2%;
+}
+
+input:hover{
+    color: aquamarine;
+}
+
+a{
+    color: aqua;
+    left: 90%;
+    font-size: 25px;
+    text-decoration: none;
+    top: 2%;
+    font-family: Times New Roman;
+    position: absolute;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+div.links {
+    border: 25px solid #a667ea;
+    background: #a667ea;
+}
+
+div.adds{
+    height: 100%;
+}
+
+body{
+    background: #4d075b;
+    height: 100%;
+}
+
+table{
+    margin: 2%;
+    float: left;
+    width: 29%;
+    height: 80%;
+}
+
+td{
+    border: solid 2px #a667ea;
+    text-align: center;
+}
+
+td.photo{
+    border: solid 2px #a667ea;
+    height: 49%;
+}
+
+td.descr{
+    color: wheat;
+    border: solid 2px #a667ea;
+    height: 32%;
+    text-align: left;
+    vertical-align: top;
+    word-break: break-all;
+    font-size: 119%;
+}
+
+td.price{
+    border: solid 2px #a667ea;
+    height: 6%;
+    text-align: center;
+    color: wheat;
+}
+
+td.phone{
+    border: solid 2px #a667ea;
+    height: 7%;
+    color: wheat;
+    text-align: center;
+}

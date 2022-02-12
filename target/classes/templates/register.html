@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up</title>
+    <link rel = stylesheet type="text/css"  th:href="@{/css/register.css}" />
+    <link rel="apple-touch-icon" sizes="180x180"  th:href="@{/ico/apple-touch-icon.ico}">
+    <link rel="icon" type="image/png" sizes="32x32"  th:href="@{/ico/favicon-32x32.ico}">
+    <link rel="icon" type="image/png" sizes="16x16"  th:href="@{/ico/favicon-16x16.ico}">
+</head>
+<body>
+<div class="main">
+<a href="/" style="left: 90%">To main page</a>
+<a href="/login" style="left: 83%">Login</a>
+    <form th:action="@{/register}" th:object = "${userForm}" method="post">
+        <label class="Nt">Enter username:</label>
+        <input type="text" name="username" class="N" maxlength="20"/>
+        <label class="Pt">Enter password:</label>
+        <input type="password" name="password" class="P" maxlength="20"/>
+        <input type="submit" value="Sign Up" class="S"/>
+    </form>
+</div>
+<div class="error">
+    <h1 th:text="${usernameError}"/>
+    <h1 th:text="${weakPassword}"/>
+</div>
+</body>
+</html>

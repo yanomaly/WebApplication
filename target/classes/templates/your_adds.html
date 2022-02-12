@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title>Your adds</title>
+    <link rel = stylesheet type="text/css"  th:href="@{/css/your_adds.css}" />
+    <link rel="apple-touch-icon" sizes="180x180"  th:href="@{/ico/apple-touch-icon.ico}">
+    <link rel="icon" type="image/png" sizes="32x32"  th:href="@{/ico/favicon-32x32.ico}">
+    <link rel="icon" type="image/png" sizes="16x16"  th:href="@{/ico/favicon-16x16.ico}">
+</head>
+<body>
+<div class="links">
+<form th:action="@{/logout}" href="/" method="post">
+    <input class="logout" type="submit" value="Logout"/>
+</form>
+    <a href="/main">To main page</a>
+</div>
+    <div class ="adds">
+        <table th:each="add : ${adds}">
+            <tr><td class = "photo">  <image th:src="@{${add.getPhoto_path()}}"  style="height: 100%; width: 100%"></image> </td></tr>
+            <tr><td class = "descr" th:text="${add.getDescription()}"></td></tr>
+            <tr><td class = price th:text="${add.getPrice()} + ' BYN'"></td></tr>
+            <tr><td class = "phone" th:text="${add.getPhone()}"></td></tr>
+            <tr><td style="border: 0;">
+            <form th:action="@{/your_adds}" method="post">
+                <input type="number" name="id" th:value="${add.getId()}" style="display: none" >
+                <input type="submit" value="Delete"/>
+            </form></td></tr>
+        </table>
+    </div>
+</body>
+</html>

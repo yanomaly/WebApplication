@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc9b02f0-9198-45c5-9a24-8b6e073b7972" name="Changes" comment="Refactor main unlog">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/WebApplication/controllers/MainUnlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/WebApplication/controllers/MainUnlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main_unlog.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Cloud" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/ad_feed.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/your_adds.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/ad.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/login.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/ad_feed_unlog.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/register.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/main_unlog.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/main.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="20VEGARaqsq21nm11UDZolSBBl8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="oracle&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MySQL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BlinBlyat" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\famil\IdeaProjects\WebApplication\src\main\resources\static\pic" />
+      <recent name="C:\Users\famil\IdeaProjects\WebApplication\src\main\resources\static\ico" />
+      <recent name="C:\Users\famil\IdeaProjects\WebApplication\src\main\resources\static\icon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\famil\IdeaProjects\WebApplication\src\main\resources\templates" />
+      <recent name="C:\Users\famil\IdeaProjects\WebApplication\src\main\resources\static\html" />
+      <recent name="C:\Users\famil\IdeaProjects\WebApplication\src\main\resources\static\css" />
+      <recent name="C:\Users\famil\IdeaProjects\WebApplication\src\main\resources\static" />
+      <recent name="C:\Users\famil\IdeaProjects\WebApplication\src\main\java\com\example\WebApplication" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.WebApplication" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="WebApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.WebApplication.WebApplication" />
+      <option name="ENABLE_LAUNCH_OPTIMIZATION" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc9b02f0-9198-45c5-9a24-8b6e073b7972" name="Changes" comment="" />
+      <created>1636121257484</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636121257484</updated>
+      <workItem from="1636121258687" duration="811000" />
+      <workItem from="1636122494958" duration="357000" />
+      <workItem from="1636197622604" duration="201000" />
+      <workItem from="1636285388527" duration="12730000" />
+      <workItem from="1636305476072" duration="5716000" />
+      <workItem from="1636351996130" duration="1430000" />
+      <workItem from="1636548252093" duration="6399000" />
+      <workItem from="1636560730354" duration="1130000" />
+      <workItem from="1636800514660" duration="142000" />
+      <workItem from="1636899135811" duration="9097000" />
+      <workItem from="1636913046022" duration="2779000" />
+      <workItem from="1636999403981" duration="590000" />
+      <workItem from="1637087766409" duration="15000" />
+      <workItem from="1637579638402" duration="10219000" />
+      <workItem from="1637759358826" duration="4283000" />
+      <workItem from="1637840434488" duration="7110000" />
+      <workItem from="1637849481147" duration="1528000" />
+      <workItem from="1637940127735" duration="2692000" />
+      <workItem from="1638101643075" duration="1669000" />
+      <workItem from="1638193361150" duration="27000" />
+      <workItem from="1639918669736" duration="3235000" />
+      <workItem from="1640250465593" duration="712000" />
+      <workItem from="1640253447013" duration="4539000" />
+      <workItem from="1640260894984" duration="4480000" />
+      <workItem from="1640280804075" duration="71000" />
+      <workItem from="1640629940031" duration="620000" />
+      <workItem from="1640683464661" duration="107000" />
+      <workItem from="1640684251944" duration="703000" />
+      <workItem from="1640762296815" duration="81000" />
+      <workItem from="1641998988844" duration="233000" />
+      <workItem from="1641999408936" duration="866000" />
+      <workItem from="1642173631466" duration="707000" />
+      <workItem from="1642346973092" duration="720000" />
+      <workItem from="1642856508486" duration="1198000" />
+      <workItem from="1642870708813" duration="2295000" />
+      <workItem from="1642924357420" duration="1136000" />
+      <workItem from="1642925707875" duration="1156000" />
+      <workItem from="1643096511512" duration="18452000" />
+      <workItem from="1643119174473" duration="4804000" />
+      <workItem from="1643131544689" duration="4051000" />
+      <workItem from="1643181845681" duration="8583000" />
+      <workItem from="1643208847804" duration="2996000" />
+      <workItem from="1643280932092" duration="2447000" />
+      <workItem from="1643293628551" duration="7311000" />
+      <workItem from="1643354260226" duration="11312000" />
+      <workItem from="1643373912908" duration="11111000" />
+      <workItem from="1643393476794" duration="4047000" />
+      <workItem from="1643441630620" duration="12083000" />
+      <workItem from="1643455283325" duration="1981000" />
+      <workItem from="1643457912129" duration="802000" />
+      <workItem from="1643465484702" duration="6599000" />
+      <workItem from="1643525564800" duration="1730000" />
+      <workItem from="1643556853078" duration="13379000" />
+      <workItem from="1643617016211" duration="11195000" />
+      <workItem from="1643635977415" duration="5311000" />
+      <workItem from="1643714537793" duration="3184000" />
+      <workItem from="1643729399898" duration="7072000" />
+      <workItem from="1643786034429" duration="13372000" />
+      <workItem from="1643806408600" duration="4899000" />
+      <workItem from="1643811574154" duration="366000" />
+      <workItem from="1643811971092" duration="787000" />
+      <workItem from="1643812818447" duration="679000" />
+      <workItem from="1643822237384" duration="4061000" />
+      <workItem from="1643895330508" duration="2023000" />
+      <workItem from="1643960483418" duration="1262000" />
+      <workItem from="1644082224952" duration="651000" />
+      <workItem from="1644130041341" duration="9000" />
+      <workItem from="1644142713037" duration="1038000" />
+      <workItem from="1644241020413" duration="617000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commit 1">
+      <created>1636312279098</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636312279098</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit 2">
+      <created>1636356313391</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636356313391</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit 3">
+      <created>1637590370777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637590370777</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit 4">
+      <created>1637849700793</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637849700793</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Separate html &amp; css">
+      <created>1643128910267</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643128910267</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add form to load ad">
+      <created>1643218151787</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643218151787</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Some not important changes">
+      <created>1643309926768</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1643309926768</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Greatest commit of all project!!!">
+      <created>1643384906120</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643384906121</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fix bug with authorization and did some cosmetic changes">
+      <created>1643397458573</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643397458573</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Ad ability to delete, sort adds and fav icon">
+      <created>1643458586530</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1643458586530</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Prepare to deploy">
+      <created>1643569225228</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643569225228</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Pushing to heroku">
+      <created>1643569587104</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643569587104</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Some fixes to run app">
+      <created>1643823404551</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1643823404551</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Legendary battle against heroku">
+      <created>1643825307907</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1643825307907</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Refactor main unlog">
+      <created>1644142864864</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1644142864864</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit 1" />
+    <MESSAGE value="Commit 2" />
+    <MESSAGE value="Commit 3" />
+    <MESSAGE value="Commit 4" />
+    <MESSAGE value="Separate html &amp; css" />
+    <MESSAGE value="Add form to load ad" />
+    <MESSAGE value="Some not important changes" />
+    <MESSAGE value="Greatest commit of all project!!!" />
+    <MESSAGE value="Fix bug with authorization and did some cosmetic changes" />
+    <MESSAGE value="Ad ability to delete, sort adds and fav icon" />
+    <MESSAGE value="Prepare to deploy" />
+    <MESSAGE value="Pushing to heroku" />
+    <MESSAGE value="Some fixes to run app" />
+    <MESSAGE value="Legendary battle against heroku" />
+    <MESSAGE value="Refactor main unlog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor main unlog" />
+  </component>
+</project>
